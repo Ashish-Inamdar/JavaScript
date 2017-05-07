@@ -1,0 +1,28 @@
+
+var user=prompt("Fight,Run,Pay").toLowerCase();
+switch(user){
+    case 'fight':
+        var skill=prompt("Do you have skills??").toLowerCase();
+        var technique=prompt("Do u have technique??").toLowerCase();
+        if(skill==='yes' && technique==='yes'){
+            console.log("You won");
+        }
+        else{
+            console.log("You lack either skill or technique");
+        }
+        console.log("You are brave to fight");
+        break;
+    case 'run':
+        console.log("You are a coward!");
+        break;
+    case 'pay':
+        var money=prompt("Do u have money").toLowerCase();
+        var ferrari=prompt("Do u have a Ferrari").toLowerCase();
+        if(money==='yes' || ferrari==='yes'){
+            console.log("You can either give money or trade Ferrari");
+        }
+        console.log("Paying is unethical");
+        break;
+    default:
+        console.log("Choose from Fight,Run,Pay");
+}
